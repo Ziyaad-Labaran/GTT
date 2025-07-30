@@ -151,3 +151,14 @@ p{
   background-color: #b55d4d;
   z-index: 1;
 }
+
+
+.effipac-usage {
+  height: 300vh;
+  .single-usage {
+    &:not(:first-child) {
+      clip-path: inset(0 0 100% 0);
+    }
+  }
+}
+

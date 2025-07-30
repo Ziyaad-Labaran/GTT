@@ -68,3 +68,22 @@ gsap.utils.toArray(".section").forEach((section, i) => {
     pinSpacing: false 
   });
 });
+
+
+
+  gsap.registerPlugin(ScrollTrigger);
+const usages = gsap.utils.toArray('.single-usage');
+    usages.forEach((usage) => {
+      gsap.to(usage, {
+        scrollTrigger: {
+          start: '0 40%',
+          end: '50% 30%',
+          trigger: usage,
+          scrub: 0.5,
+          markers: true,
+        },
+        stagger: 1,
+        delay: 1,
+        clipPath: 'inset(0 0 0% 0)',
+      });
+    });
