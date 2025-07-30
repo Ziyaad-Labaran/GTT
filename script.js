@@ -72,18 +72,72 @@ gsap.utils.toArray(".section").forEach((section, i) => {
 
 
   gsap.registerPlugin(ScrollTrigger);
-const usages = gsap.utils.toArray('.single-usage');
-    usages.forEach((usage) => {
-      gsap.to(usage, {
-        scrollTrigger: {
-          start: '0 40%',
-          end: '50% 30%',
-          trigger: usage,
-          scrub: 0.5,
-          markers: true,
-        },
-        stagger: 1,
-        delay: 1,
-        clipPath: 'inset(0 0 0% 0)',
-      });
-    });
+    gsap.to(".single-usage", {
+  scrollTrigger: {
+    start: "0 40%",
+    end: "50% 30%",
+    trigger: ".effipac-usage",
+    scrub: 0.5,
+  },
+  delay: 1,
+  stagger: 1,
+  clipPath: "inset(0 0 0% 0)"
+});
+
+
+
+
+
+class AccordionSlider {
+	constructor() {
+		this.slides = document.querySelectorAll(".slide");
+		this.prevBtn = document.querySelector(".nav-prev");
+		this.nextBtn = document.querySelector(".nav-next");
+		this.currentIndex = -1;
+
+		this.init();
+	}
+
+	init() {
+		this.slides.forEach((slide, index) => {
+			slide.addEventListener("click", () => this.setActiveSlide(index));
+		});
+
+		this.prevBtn.addEventListener("click", () => this.previousSlide());
+		this.nextBtn.addEventListener("click", () => this.nextSlide());
+
+		document.addEventListener("keydown", (e) => {
+			if (e.key === "ArrowLeft") this.previousSlide();
+			if (e.key === "ArrowRight") this.nextSlide();
+		});
+	}
+
+	setActiveSlide(index) {
+		if (this.currentIndex === index) {
+			this.slides.forEach((slide) => slide.classList.remove("active"));
+			this.currentIndex = -1;
+		} else {
+			this.slides.forEach((slide) => slide.classList.remove("active"));
+			this.slides[index].classList.add("active");
+			this.currentIndex = index;
+		}
+	}
+
+	nextSlide() {
+		const nextIndex =
+			this.currentIndex === -1 ? 0 : (this.currentIndex + 1) % this.slides.length;
+		this.setActiveSlide(nextIndex);
+	}
+
+	previousSlide() {
+		const prevIndex =
+			this.currentIndex === -1
+				? this.slides.length - 1
+				: (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+		this.setActiveSlide(prevIndex);
+	}
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+	new AccordionSlider();
+});
