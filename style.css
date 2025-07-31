@@ -234,7 +234,6 @@ p {
 
 .slider-container {
 	width: 100%;
-	max-width: 1200px;
 	height: 100vh;
 	position: relative;
 	overflow: hidden;
