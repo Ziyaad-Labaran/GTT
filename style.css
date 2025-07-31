@@ -78,13 +78,6 @@ footer {
 
 }
 
-/* .aic {
-	
-}
-
-.jcc {
-
-} */
 
 
 .loader {
@@ -134,7 +127,7 @@ body {
 }
 
 #section {
-	width: 100vw;
+	/* width: 97vw; */
 	height: 100vh;
 	overflow: hidden;
 	background: var(--light);
