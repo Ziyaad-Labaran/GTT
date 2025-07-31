@@ -8,6 +8,12 @@
 	}
 }
 
+@font-face {
+	font-family: "myFont";
+	src: url(fonts/PricedownBl.otf);
+	font-weight: 800;
+	/* font-size: 7em; */
+}
 ::selection {
 	background: #87cd33;
 	color: white;
@@ -26,7 +32,9 @@ body {
 }
 
 h1 {
-	font-size: 5rem
+	font-size: 5rem;
+	font-family: "myFont";
+	
 }
 
 h2 {
@@ -66,9 +74,10 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	/* font-size: 5rem; */
 	background: linear-gradient(90deg, rgba(23, 19, 110, 1) 0%, rgba(113, 94, 196, 1) 50%, rgba(59, 93, 217, 1) 100%);
-
 }
+
 
 .loader {
 	position: fixed;
@@ -84,14 +93,12 @@ footer {
 	overflow-x: hidden;
 }
 
-.demo-wrapper span {
-	color: white;
-	/* text-align: center; */
-}
 
 .demo-wrapper h1 {
 	color: white;
-	font-size: 2rem;
+	font-family: "myFont";
+	font-size: 90px;
+	
 }
 
 .wrapper {
@@ -171,8 +178,8 @@ h1 {
 }
 
 p {
-	font-size: 1.25rem;
-	font-weight: 300;
+	/* font-size: 1.25rem; */
+	font-weight: 800;
 }
 
 .section1 {
