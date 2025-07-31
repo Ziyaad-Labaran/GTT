@@ -190,6 +190,7 @@ p {
 
 .section2 {
 	background-image: url(3d-pulse-headset-product.jpg);
+	background-color: rgb(21, 21, 78);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -199,6 +200,7 @@ p {
 
 .section3 {
 	background-image:url(psvr-product.jpg);
+	background-color: rgb(21, 21, 78);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
