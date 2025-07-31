@@ -8,14 +8,6 @@
 	}
 }
 
-
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 ::selection {
 	background: #87cd33;
 	color: white;
@@ -78,8 +70,6 @@ footer {
 
 }
 
-
-
 .loader {
 	position: fixed;
 	top: 0;
@@ -127,10 +117,9 @@ body {
 }
 
 #section {
-	/* width: 97vw; */
 	height: 100vh;
 	overflow: hidden;
-	background: var(--light);
+	/* background: var(--light); */
 }
 
 span {
