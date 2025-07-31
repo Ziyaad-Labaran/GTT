@@ -71,15 +71,17 @@ footer {
 }
 
 .df {
-	display: flex
+	display: flex;
+
 }
 
 .aic {
-	align-items: center
+	align-items: center;
+	background: linear-gradient(90deg,rgba(23, 19, 110, 1) 0%, rgba(113, 94, 196, 1) 50%, rgba(59, 93, 217, 1) 100%);
 }
 
 .jcc {
-	justify-content: center
+	justify-content: center;
 }
 
 
@@ -151,7 +153,7 @@ span {
 	height: 1.2vh;
 	width: 50vw;
 	margin-bottom: -0.2vh;
-	background: var(--dark);
+  background: linear-gradient(to bottom, #007bff, #6610f2);
 	display: block;
 }
 
