@@ -180,7 +180,8 @@ p {
 }
 
 .section1 {
-	background: url(sony_playstation.jpg);
+	background-color: rgb(21, 21, 78);
+	background-image: url(sony_playstation.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -188,7 +189,7 @@ p {
 }
 
 .section2 {
-	background: url(3d-pulse-headset-product.jpg);
+	background-image: url(3d-pulse-headset-product.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -197,7 +198,7 @@ p {
 }
 
 .section3 {
-	background:url(psvr-product.jpg);
+	background-image:url(psvr-product.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
