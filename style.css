@@ -99,6 +99,11 @@ footer {
 	overflow-x: hidden;
 }
 
+.demo-wrapper span{
+	color:white;
+	text-align: center;
+}
+
 .wrapper {
 	display: flex;
 }
