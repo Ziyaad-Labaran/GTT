@@ -141,3 +141,25 @@ class AccordionSlider {
 document.addEventListener("DOMContentLoaded", () => {
 	new AccordionSlider();
 });
+
+
+ gsap.registerPlugin(ScrollTrigger);
+
+    const video = document.getElementById("scrollVideo");
+
+    // Ensure metadata is loaded so duration is available
+    video.addEventListener('loadedmetadata', () => {
+      let duration = video.duration;
+
+      gsap.to(video, {
+        currentTime: duration,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".video-section",
+          start: "top top",
+          end: "bottom bottom",
+          scrub: true,
+          pin: "#srollvideo", // keeps video fixed while scrolling
+        }
+      });
+    });

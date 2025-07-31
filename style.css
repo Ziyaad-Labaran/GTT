@@ -570,3 +570,39 @@ p{
 	}
 }
 
+
+
+.play-vid {
+      margin: 0;
+      font-family: sans-serif;
+      background: #111;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .sectionvid {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+    }
+
+    .video-section {
+      position: relative;
+      height: 150vh; /* makes it long enough to scroll */
+    }
+
+    .video-container {
+      position: sticky;
+      top: 0;
+      width: 100%;
+     
+      overflow: hidden;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
