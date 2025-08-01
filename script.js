@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-const cursor = document.querySelector('.wrapper img');
+const cursor = document.querySelector('..tilt');
 
 let mouseX = 0;
 let mouseY = 0;
@@ -224,7 +224,7 @@ document.addEventListener('mousemove', (event) => {
 
 	"use strict";
 
-  $(".card").tilt({
+  $(".tilt").tilt({
     maxTilt: 15,
     perspective: 1500,
     easing: "cubic-bezier(.03,.98,.52,.99)",
