@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-const cursor = document.querySelector('..tilt');
+const cursor = document.querySelector('.tilt');
 
 let mouseX = 0;
 let mouseY = 0;
